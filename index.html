@@ -218,6 +218,8 @@
                                 <ul id="access-network-risks" class="space-y-2 text-gray-600"></ul>
                             </div>
 
+                            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Mi Enfoque de Auditoría:</h4>
+                            <ul id="access-approach" class="space-y-2 text-gray-600"></ul>
                         </div>
                         <div class="bg-gray-100 p-6 rounded-lg border border-gray-200 shadow-sm">
                             <h4 class="text-lg font-semibold text-gray-800 mb-3">Detalle del Riesgo Seleccionado:</h4>
@@ -243,6 +245,8 @@
                                 <ul id="changes-network-risks" class="space-y-2 text-gray-600"></ul>
                             </div>
 
+                            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Mi Enfoque de Auditoría:</h4>
+                            <ul id="changes-approach" class="space-y-2 text-gray-600"></ul>
                         </div>
                         <div class="bg-gray-100 p-6 rounded-lg border border-gray-200 shadow-sm">
                             <h4 class="text-lg font-semibold text-gray-800 mb-3">Detalle del Riesgo Seleccionado:</h4>
@@ -268,6 +272,8 @@
                                 <ul id="operations-network-risks" class="space-y-2 text-gray-600"></ul>
                             </div>
 
+                            <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Mi Enfoque de Auditoría:</h4>
+                            <ul id="operations-approach" class="space-y-2 text-gray-600"></ul>
                         </div>
                         <div class="bg-gray-100 p-6 rounded-lg border border-gray-200 shadow-sm">
                             <h4 class="text-lg font-semibold text-gray-800 mb-3">Detalle del Riesgo Seleccionado:</h4>
@@ -283,9 +289,7 @@
         <div class="container mx-auto px-6 py-8 text-center">
             <p class="font-semibold text-lg text-white">Fortalezco la confianza a través de la auditoría.</p>
             <p class="mt-2 text-sm">Esta propuesta interactiva demuestra mi enfoque proactivo para la gestión de riesgos de TI.</p>
-            <p class="mt-2 text-sm">© Implementado por Mateo Rendón - Auditor de TI</p>
-            <br>
-            <p class="mt-2 text-sm">Contacto: +57 3183246407</p>
+            <p>©MR</p>
         </div>
     </footer>
 
@@ -296,83 +300,83 @@
                 "access": {
                     "application": [
                         {
-                            title: "Configuraciones de seguridad (Aplicaciones/Bases de Datos) inapropiadas para limitar el acceso.",
+                            title: "Configuraciones de seguridad inapropiadas para limitar el acceso.",
                             detail: "Las configuraciones de seguridad clave, incluidas las contraseñas, no son apropiadas para limitar el acceso solo a los usuarios previstos. Esto incluye configuraciones a nivel de aplicación y base de datos. Por ejemplo, una aplicación con credenciales por defecto o una base de datos con permisos excesivos para usuarios genéricos."
                         },
                         {
-                            title: "Solicitudes de acceso de usuarios (Aplicaciones/Bases de Datos) inapropiadas.",
+                            title: "Solicitudes de acceso de usuarios inapropiadas.",
                             detail: "Las peticiones de acceso a sistemas y datos, tanto para personal de TI como de negocio, pueden no estar justificadas, ser excesivas o no alinearse con el principio de mínimo privilegio. Esto puede llevar a otorgar más acceso del necesario. Por ejemplo, un usuario de negocio solicita acceso de administrador a una aplicación que solo requiere acceso de lectura."
                         },
                         {
-                            title: "Acceso otorgado (Aplicaciones/Bases de Datos) no coincide con el aprobado.",
+                            title: "Acceso otorgado no coincide con el aprobado.",
                             detail: "Existe una discrepancia entre el nivel de acceso que fue formalmente aprobado y el que realmente se configuró y otorgó al usuario en los sistemas. Esto puede resultar en privilegios excesivos o insuficientes. Un caso es cuando se aprueba un rol con permisos específicos, pero se le asigna un rol más amplio por error."
                         },
                         {
-                            title: "Derechos de acceso (Aplicaciones/Bases de Datos) no terminados a tiempo.",
+                            title: "Derechos de acceso no terminados a tiempo.",
                             detail: "Los derechos de acceso a aplicaciones y bases de datos no son revocados oportunamente cuando un usuario cambia de rol o deja la entidad. Esto crea cuentas huérfanas o accesos persistentes que son un riesgo de seguridad. Por ejemplo, un empleado desvinculado aún puede acceder a la base de datos de clientes."
                         },
                         {
-                            title: "Derechos de acceso (Aplicaciones/Bases de Datos) no permanecen apropiados.",
+                            title: "Derechos de acceso no permanecen apropiados.",
                             detail: "Los privilegios de acceso de los usuarios no se revisan ni ajustan periódicamente a medida que evolucionan sus roles o las necesidades del negocio, lo que puede llevar a la acumulación de accesos innecesarios o excesivos (privilege creep). Un caso común es el 'privilege creep' donde un usuario acumula permisos de varios roles a lo largo de los años."
                         },
                         {
-                            title: "Permisos incluidos en roles (Aplicaciones/Bases de Datos) inapropiados.",
+                            title: "Permisos incluidos en roles inapropiados.",
                             detail: "Los roles definidos en los sistemas contienen combinaciones de permisos que son excesivas, conflictivas (violando SoD) o no se alinean con las funciones de negocio esperadas para ese rol. Esto puede facilitar errores o actividades fraudulentas. Por ejemplo, un rol de 'Contador' que incluye permisos para modificar parámetros del sistema financiero."
                         },
                         {
-                            title: "Solicitudes de acceso de emergencia (Aplicaciones/Bases de Datos) inapropiadas.",
+                            title: "Solicitudes de acceso de emergencia inapropiadas.",
                             detail: "Las solicitudes para obtener acceso de emergencia a aplicaciones o bases de datos no están debidamente justificadas por una situación crítica real, o se utilizan para eludir los controles normales. Un ejemplo es una solicitud de acceso de emergencia a la base de datos de producción para realizar una consulta rutinaria que podría haberse planificado."
                         },
                         {
-                            title: "Acceso de emergencia (Aplicaciones/Bases de Datos) no revocado a tiempo.",
+                            title: "Acceso de emergencia no revocado a tiempo.",
                             detail: "Los privilegios de acceso de emergencia a aplicaciones o bases de datos no se desactivan o revocan una vez que la situación crítica ha sido resuelta o el período de tiempo autorizado ha expirado. Esto deja una ventana de oportunidad para el abuso de privilegios. Un caso es una cuenta de 'break-glass' que permanece activa durante semanas después de un incidente."
                         },
                         {
-                            title: "Uso indebido del acceso de emergencia (Aplicaciones/Bases de Datos).",
+                            title: "Uso indebido del acceso de emergencia.",
                             detail: "El acceso de emergencia a aplicaciones o bases de datos se utiliza para fines distintos a los que justificaron su activación, como realizar tareas no relacionadas con la emergencia o para acceder a información sensible sin necesidad. Esto es un indicador de control débil y posible fraude. Por ejemplo, un usuario con acceso de emergencia accede a registros de empleados no relacionados con el incidente."
                         }
                     ],
                     "operating_system": [
                         {
-                            title: "Configuraciones de seguridad (Sistema Operativo) inapropiadas para limitar el acceso.",
+                            title: "Configuraciones de seguridad inapropiadas para limitar el acceso.",
                             detail: "Las configuraciones de seguridad clave del sistema operativo, incluidas las contraseñas de cuentas de servicio o administradores, no son apropiadas para limitar el acceso solo a los usuarios previstos. Esto puede exponer el sistema a ataques o accesos no autorizados. Por ejemplo, un servidor con políticas de contraseñas débiles o puertos de administración abiertos a la red pública."
                         },
                         {
-                            title: "Solicitudes de acceso de usuarios (Sistema Operativo) inapropiadas.",
+                            title: "Solicitudes de acceso de usuarios inapropiadas.",
                             detail: "Las solicitudes de acceso para usuarios de TI y de negocios a componentes relevantes del sistema operativo son inapropiadas, lo que lleva a otorgar privilegios excesivos o innecesarios. Por ejemplo, un usuario de soporte solicita acceso de administrador a un servidor cuando solo necesita acceso a logs."
                         },
                         {
-                            title: "Acceso otorgado (Sistema Operativo) no coincide con el aprobado.",
+                            title: "Acceso otorgado no coincide con el aprobado.",
                             detail: "El acceso que se configura y otorga a los usuarios en el sistema operativo no es idéntico al que fue formalmente aprobado. Esto puede resultar en un exceso de privilegios o en una funcionalidad limitada. Un caso es cuando se aprueba acceso a un directorio específico, pero se otorga acceso a todo el disco por error."
                         },
                         {
-                            title: "Derechos de acceso (Sistema Operativo) no terminados a tiempo.",
+                            title: "Derechos de acceso no terminados a tiempo.",
                             detail: "Los derechos de acceso a cuentas de sistema operativo no son revocados oportunamente cuando un usuario cambia de rol o deja la entidad. Esto crea cuentas huérfanas o accesos persistentes que son un riesgo de seguridad. Por ejemplo, un administrador de sistemas desvinculado aún tiene una cuenta activa en los servidores."
                         },
                         {
-                            title: "Derechos de acceso (Sistema Operativo) no permanecen apropiados.",
+                            title: "Derechos de acceso no permanecen apropiados.",
                             detail: "Los privilegios de acceso de los usuarios en el sistema operativo no se revisan ni ajustan periódicamente a medida que evolucionan sus roles o las necesidades del negocio, lo que puede llevar a la acumulación de accesos innecesarios o excesivos (privilege creep). Un caso es un usuario que, tras varios cambios de puesto, mantiene permisos de administrador en servidores que ya no gestiona."
                         }
                     ],
                     "network": [
                         {
-                            title: "Configuraciones de seguridad (Redes) inapropiada para limitar el acceso.",
+                            title: "Configuraciones de seguridad inapropiada para limitar el acceso.",
                             detail: "Las configuraciones de seguridad clave en dispositivos de red (routers, firewalls, switches), incluidas las contraseñas y las reglas de acceso, no son apropiadas para limitar el acceso solo a los usuarios previstos o para proteger la red. Esto puede exponer la infraestructura a ataques. Por ejemplo, un firewall con reglas permisivas que exponen servicios internos a internet."
                         },
                         {
-                            title: "Solicitudes de acceso de usuarios (Redes) inapropiadas.",
+                            title: "Solicitudes de acceso de usuarios inapropiadas.",
                             detail: "Las solicitudes de acceso para usuarios de TI y de negocios a componentes relevantes del entorno de red (ej. dispositivos de red, segmentos de red) son inapropiadas, lo que lleva a otorgar privilegios excesivos o innecesarios. Por ejemplo, un usuario de soporte solicita acceso de administrador a un router cuando solo necesita acceso de monitoreo."
                         },
                         {
-                            title: "Acceso otorgado (Redes) no coincide con el aprobado.",
+                            title: "Acceso otorgado no coincide con el aprobado.",
                             detail: "El acceso que se configura y otorga a los usuarios en dispositivos de red no es idéntico al que fue formalmente aprobado. Esto puede resultar en un exceso de privilegios o en una funcionalidad limitada. Un caso es cuando se aprueba acceso a un segmento de red específico, pero se otorga acceso a toda la red por error."
                         },
                         {
-                            title: "Derechos de acceso (Redes) no terminados a tiempo.",
+                            title: "Derechos de acceso no terminados a tiempo.",
                             detail: "Los derechos de acceso a dispositivos de red no son revocados oportunamente cuando un usuario cambia de rol o deja la entidad. Esto crea cuentas huérfanas o accesos persistentes que son un riesgo de seguridad. Por ejemplo, un ingeniero de red desvinculado aún tiene acceso a los firewalls de la empresa."
                         },
                         {
-                            title: "Derechos de acceso (Redes) no permanecen apropiados.",
+                            title: "Derechos de acceso no permanecen apropiados.",
                             detail: "Los privilegios de acceso de los usuarios en dispositivos de red no se revisan ni ajustan periódicamente a medida que evolucionan sus roles o las necesidades del negocio, lo que puede llevar a la acumulación de accesos innecesarios o excesivos (privilege creep). Un caso es un usuario que, tras varios cambios de puesto, mantiene permisos de configuración en routers que ya no gestiona."
                         }
                     ]
@@ -410,13 +414,13 @@
                     ],
                     "operating_system": [
                         {
-                            title: "Cambios no autorizados en configuraciones (Sistema Operativo).",
+                            title: "Cambios no autorizados en configuraciones.",
                             detail: "Las configuraciones del sistema operativo pueden establecerse o cambiarse a valores no autorizados, intencionalmente o no, y no ser detectadas ni corregidas. Esto incluye cambios en archivos de configuración críticos, permisos de sistema o servicios. Un caso sería la modificación de un parámetro de seguridad en un servidor sin un ticket de cambio aprobado."
                         }
                     ],
                     "network": [
                         {
-                            title: "Cambios no autorizados en configuraciones (Redes).",
+                            title: "Cambios no autorizados en configuraciones.",
                             detail: "Las configuraciones de red pueden establecerse o cambiarse a valores no autorizados, intencionalmente o no, y no ser detectadas ni corregidas. Esto incluye cambios en reglas de firewall, configuraciones de VPN o rutas. Un caso sería la modificación de una regla de firewall crítica por un error humano, abriendo un puerto sin que el equipo de seguridad lo sepa."
                         }
                     ]
@@ -442,13 +446,13 @@
                             detail: "Una gestión de respaldos deficiente implica que los datos críticos no se copian con la frecuencia necesaria, la integridad de los respaldos no se verifica, o los procesos de recuperación son ineficaces. Esto puede llevar a la pérdida de datos irrecuperable en caso de un fallo del sistema o un desastre. Un caso es un respaldo que se ejecuta, pero al intentar restaurarlo, los datos están corruptos o incompletos, o el tiempo de recuperación excede los objetivos del negocio."
                         },
                         {
-                            title: "Configuraciones de seguridad base (Sistema Operativo) inapropiadas.",
+                            title: "Configuraciones de seguridad base inapropiadas.",
                             detail: "Las configuraciones de seguridad a nivel de sistemas operativos (ej. políticas de contraseñas de cuentas de servicio, configuraciones de puertos, reglas de firewall) no son lo suficientemente robustas para proteger los activos. Esto puede exponer la infraestructura a ataques. Por ejemplo, un servidor de base de datos con puertos abiertos innecesarios o contraseñas por defecto en servicios de red."
                         }
                     ],
                     "network": [
                         {
-                            title: "Configuraciones de seguridad base (Redes) inapropiadas.",
+                            title: "Configuraciones de seguridad base inapropiadas.",
                             detail: "Las configuraciones de seguridad a nivel de dispositivos de red (ej. políticas de contraseñas de cuentas de servicio, configuraciones de puertos, reglas de firewall) no son lo suficientemente robustas para proteger los activos. Esto puede exponer la infraestructura a ataques. Por ejemplo, un servidor de base de datos con puertos abiertos innecesarios o contraseñas por defecto en servicios de red."
                         }
                     ]
@@ -743,7 +747,7 @@
                 },
                 "seguimiento": {
                     title: "6. Seguimiento",
-                    description: "Esta fase final es crucial para asegurar que las recomendaciones de auditoría se implementen efectivamente y que los riesgos identificados sean mitigados de forma sostenible.",
+                    description: "Mi fase final es crucial para asegurar que las recomendaciones de auditoría se implementen efectivamente y que los riesgos identificados sean mitigados de forma sostenible.",
                     areas: {
                         "access": {
                             "application": [
@@ -920,4 +924,3 @@
     </script>
 </body>
 </html>
-<!DOCTYPE html>
